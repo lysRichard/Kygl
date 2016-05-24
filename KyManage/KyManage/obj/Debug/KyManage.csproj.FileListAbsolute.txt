@@ -1,0 +1,10 @@
+C:\Users\sy123\Desktop\毕业设计\KyManage\KyManage\bin\KyManage.dll
+C:\Users\sy123\Desktop\毕业设计\KyManage\KyManage\bin\KyManage.pdb
+C:\Users\sy123\Desktop\毕业设计\KyManage\KyManage\obj\Debug\KyManage.dll
+C:\Users\sy123\Desktop\毕业设计\KyManage\KyManage\obj\Debug\KyManage.pdb
+C:\Users\sy123\Desktop\毕业设计\KyManage\KyManage\obj\Debug\KyManage.csprojResolveAssemblyReference.cache
+C:\Users\sy123\Desktop\毕业论文\毕业设计\毕业设计\KyManage\KyManage\bin\KyManage.dll
+C:\Users\sy123\Desktop\毕业论文\毕业设计\毕业设计\KyManage\KyManage\bin\KyManage.pdb
+C:\Users\sy123\Desktop\毕业论文\毕业设计\毕业设计\KyManage\KyManage\obj\Debug\KyManage.csprojResolveAssemblyReference.cache
+C:\Users\sy123\Desktop\毕业论文\毕业设计\毕业设计\KyManage\KyManage\obj\Debug\KyManage.dll
+C:\Users\sy123\Desktop\毕业论文\毕业设计\毕业设计\KyManage\KyManage\obj\Debug\KyManage.pdb

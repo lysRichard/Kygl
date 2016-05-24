@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{868B237B-BA3E-415B-B001-10C5B5ED13A8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KyManage</RootNamespace>
+    <AssemblyName>KyManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.0.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\CKEditor.NET.dll" />
+    <Content Include="ckeditor\adapters\jquery.js" />
+    <Content Include="ckeditor\CHANGES.html" />
+    <Content Include="ckeditor\ckeditor.js" />
+    <Content Include="ckeditor\ckeditor_basic.js" />
+    <Content Include="ckeditor\config.js" />
+    <Content Include="ckeditor\contents.css" />
+    <Content Include="ckeditor\images\spacer.gif" />
+    <Content Include="ckeditor\INSTALL.html" />
+    <Content Include="ckeditor\lang\af.js" />
+    <Content Include="ckeditor\lang\ar.js" />
+    <Content Include="ckeditor\lang\bg.js" />
+    <Content Include="ckeditor\lang\bn.js" />
+    <Content Include="ckeditor\lang\bs.js" />
+    <Content Include="ckeditor\lang\ca.js" />
+    <Content Include="ckeditor\lang\cs.js" />
+    <Content Include="ckeditor\lang\cy.js" />
+    <Content Include="ckeditor\lang\da.js" />
+    <Content Include="ckeditor\lang\de.js" />
+    <Content Include="ckeditor\lang\el.js" />
+    <Content Include="ckeditor\lang\en-au.js" />
+    <Content Include="ckeditor\lang\en-ca.js" />
+    <Content Include="ckeditor\lang\en-gb.js" />
+    <Content Include="ckeditor\lang\en.js" />
+    <Content Include="ckeditor\lang\eo.js" />
+    <Content Include="ckeditor\lang\es.js" />
+    <Content Include="ckeditor\lang\et.js" />
+    <Content Include="ckeditor\lang\eu.js" />
+    <Content Include="ckeditor\lang\fa.js" />
+    <Content Include="ckeditor\lang\fi.js" />
+    <Content Include="ckeditor\lang\fo.js" />
+    <Content Include="ckeditor\lang\fr-ca.js" />
+    <Content Include="ckeditor\lang\fr.js" />
+    <Content Include="ckeditor\lang\gl.js" />
+    <Content Include="ckeditor\lang\gu.js" />
+    <Content Include="ckeditor\lang\he.js" />
+    <Content Include="ckeditor\lang\hi.js" />
+    <Content Include="ckeditor\lang\hr.js" />
+    <Content Include="ckeditor\lang\hu.js" />
+    <Content Include="ckeditor\lang\id.js" />
+    <Content Include="ckeditor\lang\is.js" />
+    <Content Include="ckeditor\lang\it.js" />
+    <Content Include="ckeditor\lang\ja.js" />
+    <Content Include="ckeditor\lang\ka.js" />
+    <Content Include="ckeditor\lang\km.js" />
+    <Content Include="ckeditor\lang\ko.js" />
+    <Content Include="ckeditor\lang\ku.js" />
+    <Content Include="ckeditor\lang\lt.js" />
+    <Content Include="ckeditor\lang\lv.js" />
+    <Content Include="ckeditor\lang\mk.js" />
+    <Content Include="ckeditor\lang\mn.js" />
+    <Content Include="ckeditor\lang\ms.js" />
+    <Content Include="ckeditor\lang\nb.js" />
+    <Content Include="ckeditor\lang\nl.js" />
+    <Content Include="ckeditor\lang\no.js" />
+    <Content Include="ckeditor\lang\pl.js" />
+    <Content Include="ckeditor\lang\pt-br.js" />
+    <Content Include="ckeditor\lang\pt.js" />
+    <Content Include="ckeditor\lang\ro.js" />
+    <Content Include="ckeditor\lang\ru.js" />
+    <Content Include="ckeditor\lang\sk.js" />
+    <Content Include="ckeditor\lang\sl.js" />
+    <Content Include="ckeditor\lang\sr-latn.js" />
+    <Content Include="ckeditor\lang\sr.js" />
+    <Content Include="ckeditor\lang\sv.js" />
+    <Content Include="ckeditor\lang\th.js" />
+    <Content Include="ckeditor\lang\tr.js" />
+    <Content Include="ckeditor\lang\ug.js" />
+    <Content Include="ckeditor\lang\uk.js" />
+    <Content Include="ckeditor\lang\vi.js" />
+    <Content Include="ckeditor\lang\zh-cn.js" />
+    <Content Include="ckeditor\lang\zh.js" />
+    <Content Include="ckeditor\lang\_languages.js" />
+    <Content Include="ckeditor\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\LICENSE.html" />
+    <Content Include="ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\cs.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\cy.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\da.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\de.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\el.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\eo.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\fa.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\fi.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\fr.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\gu.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\it.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\ku.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\lv.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\mk.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\nb.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\nl.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\no.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\pt-br.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\ro.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\sk.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\tr.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\ug.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\vi.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\zh-cn.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="ckeditor\plugins\adobeair\plugin.js" />
+    <Content Include="ckeditor\plugins\ajax\plugin.js" />
+    <Content Include="ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="ckeditor\plugins\bbcode\plugin.js" />
+    <Content Include="ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\bg.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\cs.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\cy.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\da.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\de.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\el.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\en.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\eo.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\et.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\fa.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\fi.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\fr.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\gu.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\he.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\hr.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\it.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\ku.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\lv.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\nb.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\nl.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\no.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\pl.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\pt-br.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\sk.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\tr.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\ug.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\uk.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\vi.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\zh-cn.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\devtools\plugin.js" />
+    <Content Include="ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="ckeditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="ckeditor\plugins\docprops\plugin.js" />
+    <Content Include="ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="ckeditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\bg.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\cs.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\cy.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\da.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\de.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\el.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\en.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\eo.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\et.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\fa.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\fi.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\fr.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\he.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\hr.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\it.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\ku.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\lv.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\nb.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\nl.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\no.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\pl.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\pt-br.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\sk.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\tr.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\ug.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\uk.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\vi.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\zh-cn.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="ckeditor\plugins\placeholder\plugin.js" />
+    <Content Include="ckeditor\plugins\preview\preview.html" />
+    <Content Include="ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\cs.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\cy.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\de.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\el.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\en.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\eo.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\et.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\fa.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\fi.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\fr.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\he.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\hr.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\it.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\ku.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\lv.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\nb.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\nl.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\no.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\pt-br.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\sk.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\tr.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\ug.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\zh-cn.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\bg.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\cs.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\cy.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\da.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\de.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\el.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\eo.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\et.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\fa.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\fi.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\fr.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\hr.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\it.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\ku.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\lv.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\mk.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\nb.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\nl.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\no.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\pl.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\pt-br.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\sk.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\tr.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\ug.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\uk.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\vi.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\zh-cn.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="ckeditor\plugins\xml\plugin.js" />
+    <Content Include="ckeditor\skins\kama\dialog.css" />
+    <Content Include="ckeditor\skins\kama\editor.css" />
+    <Content Include="ckeditor\skins\kama\icons.png" />
+    <Content Include="ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="ckeditor\skins\kama\skin.js" />
+    <Content Include="ckeditor\skins\kama\templates.css" />
+    <Content Include="ckeditor\skins\office2003\dialog.css" />
+    <Content Include="ckeditor\skins\office2003\editor.css" />
+    <Content Include="ckeditor\skins\office2003\icons.png" />
+    <Content Include="ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\office2003\skin.js" />
+    <Content Include="ckeditor\skins\office2003\templates.css" />
+    <Content Include="ckeditor\skins\v2\dialog.css" />
+    <Content Include="ckeditor\skins\v2\editor.css" />
+    <Content Include="ckeditor\skins\v2\icons.png" />
+    <Content Include="ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="ckeditor\skins\v2\skin.js" />
+    <Content Include="ckeditor\skins\v2\templates.css" />
+    <Content Include="ckeditor\themes\default\theme.js" />
+    <Content Include="css\arrow.jpg" />
+    <Content Include="css\arrow2.jpg" />
+    <Content Include="css\css.css" />
+    <Content Include="css\gq.css" />
+    <Content Include="css\jquery.js" />
+    <Content Include="css\style.css" />
+    <Content Include="css\whinfo.gif" />
+    <Content Include="css\whinfobg.jpg" />
+    <Content Include="KyGL\admin.aspx" />
+    <Content Include="KyGL\admintitle.html" />
+    <Content Include="KyGL\admin_add.aspx" />
+    <Content Include="KyGL\admin_edit.aspx" />
+    <Content Include="KyGL\admin_top.aspx" />
+    <Content Include="KyGL\awardAdd.aspx" />
+    <Content Include="KyGL\awardEdit.aspx" />
+    <Content Include="KyGL\awardList.aspx" />
+    <Content Include="KyGL\getValidateImg.aspx" />
+    <Content Include="KyGL\images\!.gif" />
+    <Content Include="KyGL\images\ad.gif" />
+    <Content Include="KyGL\images\add.gif" />
+    <Content Include="KyGL\images\back.gif" />
+    <Content Include="KyGL\images\bg.gif" />
+    <Content Include="KyGL\images\bigsize.jpg" />
+    <Content Include="KyGL\images\bootnbg.jpg" />
+    <Content Include="KyGL\images\bullet.gif" />
+    <Content Include="KyGL\images\buttom-copy-bg.gif" />
+    <Content Include="KyGL\images\buttom-left.gif" />
+    <Content Include="KyGL\images\buttom-right.gif" />
+    <Content Include="KyGL\images\buttom_bgs.gif" />
+    <Content Include="KyGL\images\buttom_left2.gif" />
+    <Content Include="KyGL\images\buttom_right2.gif" />
+    <Content Include="KyGL\images\card.jpg" />
+    <Content Include="KyGL\images\check-out_.gif" />
+    <Content Include="KyGL\images\close.gif" />
+    <Content Include="KyGL\images\content-bg-line.gif" />
+    <Content Include="KyGL\images\content-bg.gif" />
+    <Content Include="KyGL\images\database_import_.gif" />
+    <Content Include="KyGL\images\DefaultDocs.gif" />
+    <Content Include="KyGL\images\defind.gif" />
+    <Content Include="KyGL\images\del.jpg" />
+    <Content Include="KyGL\images\delete.gif" />
+    <Content Include="KyGL\images\delete_6.gif" />
+    <Content Include="KyGL\images\edit.gif" />
+    <Content Include="KyGL\images\ershou_1.gif" />
+    <Content Include="KyGL\images\ershou_2.gif" />
+    <Content Include="KyGL\images\format.gif" />
+    <Content Include="KyGL\images\fox.css" />
+    <Content Include="KyGL\images\g.gif" />
+    <Content Include="KyGL\images\gw.gif" />
+    <Content Include="KyGL\images\gw2.gif" />
+    <Content Include="KyGL\images\icon-demo.gif" />
+    <Content Include="KyGL\images\icon-login-seaver.gif" />
+    <Content Include="KyGL\images\icon-mail2.gif" />
+    <Content Include="KyGL\images\icon-phone.gif" />
+    <Content Include="KyGL\images\icon2_004.png" />
+    <Content Include="KyGL\images\icon2_089.png" />
+    <Content Include="KyGL\images\icon2_090.png" />
+    <Content Include="KyGL\images\imagedelete.gif" />
+    <Content Include="KyGL\images\imageedit.gif" />
+    <Content Include="KyGL\images\image_%28add%296.gif" />
+    <Content Include="KyGL\images\image_1.gif" />
+    <Content Include="KyGL\images\ipsecurity.gif" />
+    <Content Include="KyGL\images\l1b3.gif" />
+    <Content Include="KyGL\images\l1b4.gif" />
+    <Content Include="KyGL\images\l1b5.gif" />
+    <Content Include="KyGL\images\left-bg.gif" />
+    <Content Include="KyGL\images\left-top-right.gif" />
+    <Content Include="KyGL\images\line2.jpg" />
+    <Content Include="KyGL\images\linkspic3.gif" />
+    <Content Include="KyGL\images\linkspic6.gif" />
+    <Content Include="KyGL\images\lm.gif" />
+    <Content Include="KyGL\images\lminfo.gif" />
+    <Content Include="KyGL\images\login-buttom-bg.gif" />
+    <Content Include="KyGL\images\login-content-bg.gif" />
+    <Content Include="KyGL\images\login-top-bg.gif" />
+    <Content Include="KyGL\images\login-wel.gif" />
+    <Content Include="KyGL\images\login_bg.jpg" />
+    <Content Include="KyGL\images\Login_but.gif" />
+    <Content Include="KyGL\images\logo.gif" />
+    <Content Include="KyGL\images\logo.jpg" />
+    <Content Include="KyGL\images\logo.png" />
+    <Content Include="KyGL\images\logo2.jpg" />
+    <Content Include="KyGL\images\luck.gif" />
+    <Content Include="KyGL\images\mail_leftbg.gif" />
+    <Content Include="KyGL\images\mail_rightbg.gif" />
+    <Content Include="KyGL\images\menu_bg.gif" />
+    <Content Include="KyGL\images\menu_bg1.gif" />
+    <Content Include="KyGL\images\menu_bg2.gif" />
+    <Content Include="KyGL\images\menu_bgs.gif" />
+    <Content Include="KyGL\images\menu_topimg.gif" />
+    <Content Include="KyGL\images\menu_topline.gif" />
+    <Content Include="KyGL\images\mime.gif" />
+    <Content Include="KyGL\images\nav-right-bg.gif" />
+    <Content Include="KyGL\images\news-title-bg.gif" />
+    <Content Include="KyGL\images\ok.gif" />
+    <Content Include="KyGL\images\OK.jpg" />
+    <Content Include="KyGL\images\out.gif" />
+    <Content Include="KyGL\images\password.gif" />
+    <Content Include="KyGL\images\pic1.gif" />
+    <Content Include="KyGL\images\pic10.gif" />
+    <Content Include="KyGL\images\pic11.gif" />
+    <Content Include="KyGL\images\pic12.gif" />
+    <Content Include="KyGL\images\pic13.gif" />
+    <Content Include="KyGL\images\pic14.gif" />
+    <Content Include="KyGL\images\pic15.gif" />
+    <Content Include="KyGL\images\pic16.gif" />
+    <Content Include="KyGL\images\pic17.gif" />
+    <Content Include="KyGL\images\pic18.gif" />
+    <Content Include="KyGL\images\pic19.gif" />
+    <Content Include="KyGL\images\pic21.gif" />
+    <Content Include="KyGL\images\pic22.gif" />
+    <Content Include="KyGL\images\pic23.gif" />
+    <Content Include="KyGL\images\pic24.gif" />
+    <Content Include="KyGL\images\pic25.gif" />
+    <Content Include="KyGL\images\pic26.gif" />
+    <Content Include="KyGL\images\pic5.gif" />
+    <Content Include="KyGL\images\pic6.gif" />
+    <Content Include="KyGL\images\pic7.gif" />
+    <Content Include="KyGL\images\pic8.gif" />
+    <Content Include="KyGL\images\pic9.gif" />
+    <Content Include="KyGL\images\Redirects.gif" />
+    <Content Include="KyGL\images\report2_%28add%29.gif" />
+    <Content Include="KyGL\images\report2_%28delete%29.gif" />
+    <Content Include="KyGL\images\right_smbg.jpg" />
+    <Content Include="KyGL\images\servicezhgb2312.gif" />
+    <Content Include="KyGL\images\set.gif" />
+    <Content Include="KyGL\images\set2.gif" />
+    <Content Include="KyGL\images\sitebackup.gif" />
+    <Content Include="KyGL\images\skin.css" />
+    <Content Include="KyGL\images\smallbg.jpg" />
+    <Content Include="KyGL\images\st.gif" />
+    <Content Include="KyGL\images\st.png" />
+    <Content Include="KyGL\images\stop.gif" />
+    <Content Include="KyGL\images\str.gif" />
+    <Content Include="KyGL\images\Submit_bg.gif" />
+    <Content Include="KyGL\images\t2bg1.gif" />
+    <Content Include="KyGL\images\t2bg2.gif" />
+    <Content Include="KyGL\images\t2bg4.gif" />
+    <Content Include="KyGL\images\t2bg5.gif" />
+    <Content Include="KyGL\images\title.gif" />
+    <Content Include="KyGL\images\tj.jpg" />
+    <Content Include="KyGL\images\to.gif" />
+    <Content Include="KyGL\images\tool-down-pic.gif" />
+    <Content Include="KyGL\images\top-right.gif" />
+    <Content Include="KyGL\images\top_bt.jpg" />
+    <Content Include="KyGL\images\ts.gif" />
+    <Content Include="KyGL\images\user-info.gif" />
+    <Content Include="KyGL\images\usercontrol.gif" />
+    <Content Include="KyGL\images\vie.gif" />
+    <Content Include="KyGL\images\X.gif" />
+    <Content Include="KyGL\images\yc.gif" />
+    <Content Include="KyGL\images\yx.gif" />
+    <Content Include="KyGL\index.aspx" />
+    <Content Include="KyGL\js\jquery-1.3.2.js" />
+    <Content Include="KyGL\js\jquery-calendar.css" />
+    <Content Include="KyGL\js\jquery-calendar.js" />
+    <Content Include="KyGL\js\JScript.js" />
+    <Content Include="KyGL\js\moo.fx.js" />
+    <Content Include="KyGL\js\moo.fx.pack.js" />
+    <Content Include="KyGL\js\prototype.lite.js" />
+    <Content Include="KyGL\left.aspx" />
+    <Content Include="KyGL\login.aspx" />
+    <Content Include="KyGL\modiPwd.aspx" />
+    <Content Include="KyGL\nopower.aspx" />
+    <Content Include="KyGL\paperAdd.aspx" />
+    <Content Include="KyGL\paperEdit.aspx" />
+    <Content Include="KyGL\paperList.aspx" />
+    <Content Include="KyGL\patentAdd.aspx" />
+    <Content Include="KyGL\patentEdit.aspx" />
+    <Content Include="KyGL\projectAdd.aspx" />
+    <Content Include="KyGL\projectEdit.aspx" />
+    <Content Include="KyGL\projectList.aspx" />
+    <Content Include="KyGL\right.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="KyGL\teacherAdd.aspx" />
+    <Content Include="KyGL\teacherEdit.aspx" />
+    <Content Include="KyGL\teacherList.aspx" />
+    <Content Include="upload\idcard\201512\20151209090735.jpg" />
+    <Content Include="upload\idcard\201512\20151209101335.jpg" />
+    <Content Include="upload\idcard\201512\20151209105528_bm.jpg" />
+    <Content Include="upload\idcard\201512\20151209105528_sc.jpg" />
+    <Content Include="upload\idcard\201512\20151209105528_zm.jpg" />
+    <Content Include="upload\idcard\201512\20151209105905_bm.jpg" />
+    <Content Include="upload\idcard\201512\20151209105905_sc.jpg" />
+    <Content Include="upload\idcard\201512\20151209105905_zm.jpg" />
+    <Content Include="KyGL\patentList.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\360safe.cs" />
+    <Compile Include="BLL\Chkadmin.cs" />
+    <Compile Include="BLL\Class.cs" />
+    <Compile Include="BLL\Data.cs" />
+    <Compile Include="BLL\DataBase.cs" />
+    <Compile Include="BLL\Error.cs" />
+    <Compile Include="BLL\HXmlOpt.cs" />
+    <Compile Include="BLL\ly.cs" />
+    <Compile Include="BLL\MD5.cs" />
+    <Compile Include="BLL\SiteMap.cs" />
+    <Compile Include="BLL\Tools.cs" />
+    <Compile Include="BLL\userClass.cs" />
+    <Compile Include="BLL\webconfig.cs" />
+    <Compile Include="BLL\webError.cs" />
+    <Compile Include="BLL\WebJS.cs" />
+    <Compile Include="BLL\XmlOpt.cs" />
+    <Compile Include="KyGL\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\admin_add.aspx.cs">
+      <DependentUpon>admin_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\admin_add.aspx.designer.cs">
+      <DependentUpon>admin_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\admin_edit.aspx.cs">
+      <DependentUpon>admin_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\admin_edit.aspx.designer.cs">
+      <DependentUpon>admin_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\admin_top.aspx.cs">
+      <DependentUpon>admin_top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\admin_top.aspx.designer.cs">
+      <DependentUpon>admin_top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\awardAdd.aspx.cs">
+      <DependentUpon>awardAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\awardAdd.aspx.designer.cs">
+      <DependentUpon>awardAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\awardEdit.aspx.cs">
+      <DependentUpon>awardEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\awardEdit.aspx.designer.cs">
+      <DependentUpon>awardEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\awardList.aspx.cs">
+      <DependentUpon>awardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\awardList.aspx.designer.cs">
+      <DependentUpon>awardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\getValidateImg.aspx.cs">
+      <DependentUpon>getValidateImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\getValidateImg.aspx.designer.cs">
+      <DependentUpon>getValidateImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\modiPwd.aspx.cs">
+      <DependentUpon>modiPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\modiPwd.aspx.designer.cs">
+      <DependentUpon>modiPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\nopower.aspx.cs">
+      <DependentUpon>nopower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\nopower.aspx.designer.cs">
+      <DependentUpon>nopower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\paperAdd.aspx.cs">
+      <DependentUpon>paperAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\paperAdd.aspx.designer.cs">
+      <DependentUpon>paperAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\paperEdit.aspx.cs">
+      <DependentUpon>paperEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\paperEdit.aspx.designer.cs">
+      <DependentUpon>paperEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\paperList.aspx.cs">
+      <DependentUpon>paperList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\paperList.aspx.designer.cs">
+      <DependentUpon>paperList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\patentAdd.aspx.cs">
+      <DependentUpon>patentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\patentAdd.aspx.designer.cs">
+      <DependentUpon>patentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\patentEdit.aspx.cs">
+      <DependentUpon>patentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\patentEdit.aspx.designer.cs">
+      <DependentUpon>patentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\projectAdd.aspx.cs">
+      <DependentUpon>projectAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\projectAdd.aspx.designer.cs">
+      <DependentUpon>projectAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\projectEdit.aspx.cs">
+      <DependentUpon>projectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\projectEdit.aspx.designer.cs">
+      <DependentUpon>projectEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\projectList.aspx.cs">
+      <DependentUpon>projectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\projectList.aspx.designer.cs">
+      <DependentUpon>projectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\right.aspx.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\right.aspx.designer.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\teacherAdd.aspx.cs">
+      <DependentUpon>teacherAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\teacherAdd.aspx.designer.cs">
+      <DependentUpon>teacherAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\teacherEdit.aspx.cs">
+      <DependentUpon>teacherEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\teacherEdit.aspx.designer.cs">
+      <DependentUpon>teacherEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KyGL\teacherList.aspx.cs">
+      <DependentUpon>teacherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\teacherList.aspx.designer.cs">
+      <DependentUpon>teacherList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="KyGL\patentList.aspx.cs">
+      <DependentUpon>patentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KyGL\patentList.aspx.designer.cs">
+      <DependentUpon>patentList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ckeditor\.htaccess" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="css\Thumbs.db" />
+    <None Include="KyGL\images\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28930</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
